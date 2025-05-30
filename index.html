@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jorence Mendoza Activity</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-8 text-gray-800 font-sans">
+  <div class="max-w-2xl mx-auto space-y-10">
+    <!-- Even Numbers Sum -->
+    <div class="p-6 bg-white rounded-xl shadow-md">
+      <h2 class="text-xl font-bold mb-2">Sum of Even Numbers</h2>
+      <input id="evenInput" type="text" placeholder="Enter numbers (comma-separated)" class="w-full p-2 border rounded mb-2" />
+      <button onclick="handleEvenSum()" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Calculate</button>
+      <p class="mt-2">Sum: <span id="evenResult" class="font-semibold text-green-600"></span></p>
+    </div>
+
+    <!-- Remove Vowels -->
+    <div class="p-6 bg-white rounded-xl shadow-md">
+      <h2 class="text-xl font-bold mb-2">Remove Vowels</h2>
+      <input id="vowelInput" type="text" placeholder="Enter a string" class="w-full p-2 border rounded mb-2" />
+      <button onclick="handleVowelRemove()" class="bg-purple-500 text-white px-4 py-2 rounded hover:bg-purple-600">Remove</button>
+      <p class="mt-2">Result: <span id="vowelResult" class="font-semibold text-blue-700"></span></p>
+    </div>
+
+    <!-- Common Elements -->
+    <div class="p-6 bg-white rounded-xl shadow-md">
+      <h2 class="text-xl font-bold mb-2">Common Elements Between Two Arrays</h2>
+      <input id="array1Input" type="text" placeholder="Enter first array (comma-separated)" class="w-full p-2 border rounded mb-2" />
+      <input id="array2Input" type="text" placeholder="Enter second array (comma-separated)" class="w-full p-2 border rounded mb-2" />
+      <button onclick="handleCommonElements()" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Find Common</button>
+      <p class="mt-2">Common Elements: <span id="commonResult" class="font-semibold text-indigo-700"></span></p>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
